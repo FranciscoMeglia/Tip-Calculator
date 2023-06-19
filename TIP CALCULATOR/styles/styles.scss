@@ -1,3 +1,6 @@
+// IMPORTS
+@import "../mediaQ/mediaq.scss";
+
 html , body {
     margin: 0;
     padding: 0;
@@ -10,6 +13,10 @@ html , body {
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+            background-color: black;
+        }
+
         .calculator-container {
             width: 800px;
             height: 430px;
@@ -19,6 +26,12 @@ html , body {
             align-items: center;
             justify-content: center;
 
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+
             .calculator-1 {
                 width: 47%;
                 height: 89%;
@@ -27,6 +40,11 @@ html , body {
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: column;
+
+                @include mobile {
+                    width: 100%;
+                    margin-top: 100px;
+                }
 
 
                 .bill {
@@ -152,6 +170,13 @@ html , body {
                 height: 89%;
                 border-radius: 20px;
                 background-color: hsl(183, 100%, 15%);
+
+                @include mobile {
+                    width: 90%;
+                    margin-top: 20px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
 
                 .tip-amount {
                     width: 100%;

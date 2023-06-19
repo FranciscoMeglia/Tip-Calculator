@@ -10,6 +10,11 @@ html main, body main {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  html main, body main {
+    background-color: black;
+  }
+}
 html main .calculator-container, body main .calculator-container {
   width: 800px;
   height: 430px;
@@ -19,6 +24,13 @@ html main .calculator-container, body main .calculator-container {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  html main .calculator-container, body main .calculator-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
 html main .calculator-container .calculator-1, body main .calculator-container .calculator-1 {
   width: 47%;
   height: 89%;
@@ -27,6 +39,12 @@ html main .calculator-container .calculator-1, body main .calculator-container .
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  html main .calculator-container .calculator-1, body main .calculator-container .calculator-1 {
+    width: 100%;
+    margin-top: 100px;
+  }
 }
 html main .calculator-container .calculator-1 .bill, body main .calculator-container .calculator-1 .bill {
   width: 90%;
@@ -138,6 +156,14 @@ html main .calculator-container .calculator-2, body main .calculator-container .
   height: 89%;
   border-radius: 20px;
   background-color: hsl(183, 100%, 15%);
+}
+@media screen and (max-width: 700px) {
+  html main .calculator-container .calculator-2, body main .calculator-container .calculator-2 {
+    width: 90%;
+    margin-top: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 html main .calculator-container .calculator-2 .tip-amount, body main .calculator-container .calculator-2 .tip-amount {
   width: 100%;
