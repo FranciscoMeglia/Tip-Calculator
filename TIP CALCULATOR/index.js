@@ -1,5 +1,4 @@
 // VARIABLES
-
 const billInput = document.getElementById("bill");
 const numberOfPeopleInput = document.getElementById("people");
 const custom = document.getElementById("custom")
@@ -33,42 +32,42 @@ custom.addEventListener("input" , calculateTotalPerPerson)
 calculateTotalPerPerson()
 
 // PORCENTAGES
-function cinco() {
+const cinco = () => {
     porcentage = 0.05
     calculateTotalPerPerson()
 }
 
-function diez() {
+const diez = () => {
     porcentage = 0.10
     calculateTotalPerPerson()
 }
 
-function quince() {
+const quince = () => {
     porcentage = 0.15
     calculateTotalPerPerson()
 }
 
-function veinticinco() {
+const veinticinco = () => {
     porcentage = 0.25
     calculateTotalPerPerson()
 }
 
-function cincuenta() {
+const cincuenta = () => {
     porcentage = 0.50
     calculateTotalPerPerson()
 }
 
-function customNumber() {
+const customNumber = () => {
     const customInput = parseFloat(custom.value)
     porcentage = customInput / 100
     calculateTotalPerPerson()
 }
 
 const reset = () => {
-
     total.innerHTML = "$0.00"
     tipPerPerson.innerHTML = "$0.00"
     porcentage = 0;
     billInput.value = "";
     numberOfPeopleInput.value = "";
+    custom.value = ""
 }
