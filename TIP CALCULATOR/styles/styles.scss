@@ -1,0 +1,276 @@
+html , body {
+    margin: 0;
+    padding: 0;
+
+    main {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(202, 242, 243);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .calculator-container {
+            width: 800px;
+            height: 430px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .calculator-1 {
+                width: 47%;
+                height: 89%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+
+
+                .bill {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 50px;
+
+                    label {
+                        color: hsl(186, 14%, 43%);
+                        font-family: monospace;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-top: 10px;
+                        padding-bottom: 5px;
+                    }
+    
+                    input {
+                        width: 95%;
+                        height: 40px;
+                        background-color: rgb(234, 240, 239);
+                        border: none;
+                        border-radius: 5px;
+
+                        &:is(:active , :focus) {
+                            outline: none;
+                            border: 2px solid hsl(183, 97%, 27%);
+                        }
+                    }
+                }
+                
+                .select-tip {
+                    background-color: rgb(255, 255, 255);
+                    width: 90%;
+                    padding-bottom: 50px;
+
+                    label {
+                        color: hsl(186, 14%, 43%);
+                        font-family: monospace;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+
+                    .tips {
+                        display: flex;
+                        width: 100%;
+                        padding-top: 10px;
+                        flex-wrap: wrap;
+                        gap: 10px;
+
+                        button {
+                            width: 30%;
+                            height: 45px;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: hsl(183, 100%, 15%);
+                            color: white;
+                            font-family: monospace;
+                            font-size: 22px;
+                            font-weight: 700;
+                            transition: 0.2s;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: hsl(185, 41%, 84%);
+                                color: hsl(183, 100%, 15%) ;
+                            }
+                        }
+
+                        input {
+                            width: 28%;
+                            font-size: 22px;
+                            font-family: monospace;
+                            font-weight: 700;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: rgb(234, 240, 239);
+                
+                            &::placeholder {
+                                color: hsl(183, 97%, 27%);
+                                padding-left: 10%;
+                            }
+
+                            &:is(:active , :focus) {
+                                outline: none;
+                                border: 2px solid hsl(184, 96%, 17%);
+                            }
+                        }
+                    }
+                }
+
+                .people {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        color: hsl(186, 14%, 43%);
+                        font-family: monospace;
+                        font-weight: 700;
+                        font-size: 18px;
+                        padding-bottom: 5px;
+                    }
+    
+                    input {
+                        width: 95%;
+                        height: 40px;
+                        background-color: rgb(234, 240, 239);
+                        border: none;
+                        border-radius: 5px;
+
+                        &:is(:active , :focus) {
+                            outline: none;
+                            border: 2px solid hsl(183, 100%, 15%);
+                        }
+                    }
+                }
+            }
+
+            .calculator-2 {
+                width: 47%;
+                height: 89%;
+                border-radius: 20px;
+                background-color: hsl(183, 100%, 15%);
+
+                .tip-amount {
+                    width: 100%;
+                    height: 50%;
+                  //  background-color: rgb(17, 77, 12);
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+
+                    .amount {
+                        width: 100%;
+                        height: 50%;
+                       // background-color: rgb(55, 56, 56);
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .amount-1 {
+                            width: auto;
+                           //background-color: rgb(138, 176, 209);
+
+                            h3 {
+                                font-family: monospace;
+                                font-weight: 700;
+                                color: white;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }
+
+                            p {
+                                padding-top: 0;
+                                margin-top: 0;
+                                font-family: monospace;
+                                font-weight: 700;
+                                color: hsl(0, 0%, 66%);
+                            }
+                        }
+
+                        .amount-2 {
+                            width: auto;
+
+                            p {
+                                font-size: 40px;
+                                font-family: monospace;
+                                font-weight: 700;
+                                color: rgb(55, 194, 171);
+                            }
+                        }
+                    }
+
+                    .total {
+                        width: 100%;
+                        height: 50%;
+                        //background-color: rgb(49, 151, 151);
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .amount-1 {
+                            width: auto;
+                           //background-color: rgb(138, 176, 209);
+
+                            h3 {
+                                font-family: monospace;
+                                font-weight: 700;
+                                color: white;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }
+
+                            p {
+                                padding-top: 0;
+                                margin-top: 0;
+                                font-family: monospace;
+                                font-weight: 700;
+                                color: hsl(0, 0%, 66%);
+                            }
+                        }
+
+                        .amount-2 {
+                            width: auto;
+
+                            p {
+                                font-size: 40px;
+                                font-family: monospace;
+                                font-weight: 700;
+                                color: rgb(55, 194, 171);
+                            }
+                        }
+                    }
+                }
+
+                .reset {
+                    width: 100%;
+                    height: 50%;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    button {
+                        width: 80%;
+                        height: 45px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: hsl(183, 89%, 22%);
+                        color: hsl(184, 96%, 17%);
+                        margin-bottom: 25px;
+                        font-family: monospace;
+                        font-size: 22px;
+                        font-weight: 700;
+                        transition: 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: hsl(185, 41%, 84%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
