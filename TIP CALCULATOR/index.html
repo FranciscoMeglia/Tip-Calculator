@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip calculator Probando GIT 2.0</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="../TIP CALCULATOR/styles/styles.css">
 </head>
 <body>
     <main>
         <div class="calculator-container">
             <div class="calculator-1">
                 <div class="bill">
-                    <label for="">Bill</label>
-                    <input type="text">
+                    <label for="bill">Bill</label>
+                    <input type="text" name="bill" id="bill">
                 </div>
                 <div class="select-tip">
                     <label for="">Select Tip %</label>
                     <div class="tips">
-                        <button>5%</button>
-                        <button>10%</button>
-                        <button>15%</button>
-                        <button>25%</button>
-                        <button>50%</button>
-                        <input type="text" placeholder="Custom">
+                        <button onclick="cinco()">5%</button>
+                        <button onclick="diez()">10%</button>
+                        <button onclick="quince()">15%</button>
+                        <button onclick="veinticinco()">25%</button>
+                        <button onclick="cincuenta()">50%</button>
+                        <input type="text" placeholder="Custom" id="custom" oninput="customNumber()">
                     </div>
                 </div>
                 <class class="people">
-                    <label for="">Number of people</label>
-                    <input type="text">
+                    <label for="people">Number of people</label>
+                    <input type="text" name="people" id="people">
                 </class>
             </div>
             <div class="calculator-2">
@@ -39,24 +39,26 @@
                             <p>/ person</p>
                         </div>
                         <div class="amount-2">
-                            <p>$0.00</p>
+                            <p id="tip">$0.00</p>
                         </div>
                     </div>
                     <div class="total">
                         <div class="amount-1">
-                            <h3>Tip Amount</h3>
+                            <h3>Total Amount</h3>
                             <p>/ person</p>
                         </div>
                         <div class="amount-2">
-                            <p>$0.00</p>
+                            <p id="total">$0.00</p>
                         </div>
                     </div>
                 </div>
                 <div class="reset">
-                    <button>RESET</button>
+                    <button onclick="reset()">RESET</button>
                 </div>
             </div>
         </div>
     </main>  
+
+    <script src="index.js"></script>
 </body>
 </html>
