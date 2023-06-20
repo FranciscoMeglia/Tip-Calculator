@@ -4,31 +4,31 @@ const numberOfPeopleInput = document.getElementById("people");
 const custom = document.getElementById("custom")
 const tipPerPerson = document.getElementById("tip");
 const total = document.getElementById("total");
-var porcentage = 0 ;
+var porcentage = 0;
 
 const calculateTotalPerPerson = () => {
-  const billValue = parseFloat(billInput.value);
-  const numberOfPeopleValue = parseFloat(numberOfPeopleInput.value);
+    const billValue = parseFloat(billInput.value);
+    const numberOfPeopleValue = parseFloat(numberOfPeopleInput.value);
 
-  if (isNaN(billValue) || isNaN(numberOfPeopleValue)) {
-    // if the value is not a number return this
-    total.innerHTML = "$0.00";
-  } else {
-    if (porcentage <= 0){
-        const resultado = billValue  / numberOfPeopleValue;
-        total.innerHTML = "$" + resultado.toFixed(2);
+    if (isNaN(billValue) || isNaN(numberOfPeopleValue)) {
+        // if the value is not a number return this
+        total.innerHTML = "$0.00";
     } else {
-        const resultado = ((billValue * porcentage) + billValue) / numberOfPeopleValue;
-        const tipPP = (((billValue * porcentage) + billValue) - billValue) / numberOfPeopleValue;
-        tipPerPerson.innerHTML = "$" + tipPP.toFixed(2);
-        total.innerHTML = "$" + resultado.toFixed(2); // Redondear el resultado a dos decimales
+        if (porcentage <= 0) {
+            const resultado = billValue / numberOfPeopleValue;
+            total.innerHTML = "$" + resultado.toFixed(2);
+        } else {
+            const resultado = ((billValue * porcentage) + billValue) / numberOfPeopleValue;
+            const tipPP = (((billValue * porcentage) + billValue) - billValue) / numberOfPeopleValue;
+            tipPerPerson.innerHTML = "$" + tipPP.toFixed(2);
+            total.innerHTML = "$" + resultado.toFixed(2); 
+        }
     }
-  }
 };
 
 billInput.addEventListener("input", calculateTotalPerPerson);
 numberOfPeopleInput.addEventListener("input", calculateTotalPerPerson);
-custom.addEventListener("input" , calculateTotalPerPerson)
+custom.addEventListener("input", calculateTotalPerPerson)
 calculateTotalPerPerson()
 
 // PORCENTAGES

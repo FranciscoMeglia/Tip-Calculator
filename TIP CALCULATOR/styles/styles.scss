@@ -1,7 +1,8 @@
 // IMPORTS
 @import "../mediaQ/mediaq.scss";
 
-html , body {
+html,
+body {
     margin: 0;
     padding: 0;
 
@@ -14,7 +15,8 @@ html , body {
         justify-content: center;
 
         @include mobile {
-            background-color: black;
+            background-color: rgb(255, 255, 255);
+            height: auto;
         }
 
         .calculator-container {
@@ -30,6 +32,7 @@ html , body {
                 flex-direction: column;
                 width: 100%;
                 height: auto;
+                border-radius: 0;
             }
 
             .calculator-1 {
@@ -43,7 +46,8 @@ html , body {
 
                 @include mobile {
                     width: 100%;
-                    margin-top: 100px;
+                    height: auto;
+                    margin-top: 10px;
                 }
 
 
@@ -61,21 +65,42 @@ html , body {
                         margin-top: 10px;
                         padding-bottom: 5px;
                     }
-    
-                    input {
-                        width: 95%;
-                        height: 40px;
-                        background-color: rgb(234, 240, 239);
-                        border: none;
-                        border-radius: 5px;
 
-                        &:is(:active , :focus) {
-                            outline: none;
-                            border: 2px solid hsl(183, 97%, 27%);
+                    .input-wrapper {
+
+                        position: relative;
+
+                        input {
+                            width: 95%;
+                            height: 40px;
+                            background-color: rgb(234, 240, 239);
+                            border: none;
+                            border-radius: 5px;
+                            font-family: monospace;
+                            font-size: 22px;
+                            color: hsl(183, 100%, 15%);
+                            font-weight: 700;
+                            text-align: right;
+                            padding-right: 5px;
+
+                            &:is(:active, :focus) {
+                                outline: none;
+                                border: 2px solid hsl(183, 97%, 27%);
+                            }
+
+                            &::placeholder {
+                                color: rgb(181, 184, 181);
+                            }
+                        }
+
+                        img {
+                            position: absolute;
+                            left: 3%;
+                            top: 28%;
                         }
                     }
                 }
-                
+
                 .select-tip {
                     background-color: rgb(255, 255, 255);
                     width: 90%;
@@ -110,7 +135,7 @@ html , body {
                             &:hover {
                                 cursor: pointer;
                                 background-color: hsl(185, 41%, 84%);
-                                color: hsl(183, 100%, 15%) ;
+                                color: hsl(183, 100%, 15%);
                             }
                         }
 
@@ -123,13 +148,13 @@ html , body {
                             border: none;
                             color: hsl(183, 100%, 15%);
                             background-color: rgb(234, 240, 239);
-                
+                            text-align: center;
+
                             &::placeholder {
                                 color: hsl(183, 97%, 27%);
-                                padding-left: 10%;
                             }
 
-                            &:is(:active , :focus) {
+                            &:is(:active, :focus) {
                                 outline: none;
                                 border: 2px solid hsl(184, 96%, 17%);
                             }
@@ -149,19 +174,40 @@ html , body {
                         font-size: 18px;
                         padding-bottom: 5px;
                     }
-    
-                    input {
-                        width: 95%;
-                        height: 40px;
-                        background-color: rgb(234, 240, 239);
-                        border: none;
-                        border-radius: 5px;
 
-                        &:is(:active , :focus) {
-                            outline: none;
-                            border: 2px solid hsl(183, 100%, 15%);
+                    .input-wrapper2 {
+                        position: relative;
+
+                        input {
+                            width: 95%;
+                            height: 40px;
+                            background-color: rgb(234, 240, 239);
+                            border: none;
+                            border-radius: 5px;
+                            font-family: monospace;
+                            font-size: 22px;
+                            color: hsl(183, 100%, 15%);
+                            font-weight: 700;
+                            text-align: right;
+                            padding-right: 5px;
+
+                            &:is(:active, :focus) {
+                                outline: none;
+                                border: 2px solid hsl(183, 100%, 15%);
+                            }
+
+                            &::placeholder {
+                                color: rgb(181, 184, 181);
+                            }
                         }
                     }
+
+                    img {
+                        position: absolute;
+                        left: 3%;
+                        top: 28%;
+                    }
+
                 }
             }
 
@@ -173,7 +219,7 @@ html , body {
 
                 @include mobile {
                     width: 90%;
-                    margin-top: 20px;
+                    margin-top: 30px;
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                 }
@@ -181,21 +227,18 @@ html , body {
                 .tip-amount {
                     width: 100%;
                     height: 50%;
-                  //  background-color: rgb(17, 77, 12);
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
 
                     .amount {
                         width: 100%;
                         height: 50%;
-                       // background-color: rgb(55, 56, 56);
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
 
                         .amount-1 {
                             width: auto;
-                           //background-color: rgb(138, 176, 209);
 
                             h3 {
                                 font-family: monospace;
@@ -229,14 +272,12 @@ html , body {
                     .total {
                         width: 100%;
                         height: 50%;
-                        //background-color: rgb(49, 151, 151);
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
 
                         .amount-1 {
                             width: auto;
-                           //background-color: rgb(138, 176, 209);
 
                             h3 {
                                 font-family: monospace;

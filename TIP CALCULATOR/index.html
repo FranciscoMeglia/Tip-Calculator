@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip calculator Probando GIT 2.0</title>
     <link rel="stylesheet" href="../TIP CALCULATOR/styles/styles.css">
+    <link rel="shortcut icon" href="/TIP CALCULATOR/assets/favicon-32x32.png" type="image/x-icon">
 </head>
+
 <body>
     <main>
         <div class="calculator-container">
             <div class="calculator-1">
                 <div class="bill">
                     <label for="bill">Bill</label>
-                    <input type="text" name="bill" id="bill">
+                    <div class="input-wrapper">
+                        <input type="text" name="bill" id="bill" placeholder="0">
+                        <img src="/TIP CALCULATOR/assets/icon-dollar.svg" alt="">
+                    </div>
                 </div>
                 <div class="select-tip">
                     <label for="">Select Tip %</label>
@@ -28,7 +34,10 @@
                 </div>
                 <class class="people">
                     <label for="people">Number of people</label>
-                    <input type="text" name="people" id="people">
+                    <div class="input-wrapper2">
+                        <input type="text" name="people" id="people" placeholder="0">
+                        <img src="/TIP CALCULATOR/assets/icon-person.svg" alt="">
+                    </div>
                 </class>
             </div>
             <div class="calculator-2">
@@ -57,8 +66,7 @@
                 </div>
             </div>
         </div>
-    </main>  
-
+    </main>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
-html main, body main {
+html main,
+body main {
   width: 100%;
   height: 100vh;
   background-color: rgb(202, 242, 243);
@@ -11,11 +13,14 @@ html main, body main {
   justify-content: center;
 }
 @media screen and (max-width: 700px) {
-  html main, body main {
-    background-color: black;
+  html main,
+  body main {
+    background-color: rgb(255, 255, 255);
+    height: auto;
   }
 }
-html main .calculator-container, body main .calculator-container {
+html main .calculator-container,
+body main .calculator-container {
   width: 800px;
   height: 430px;
   border-radius: 20px;
@@ -25,13 +30,16 @@ html main .calculator-container, body main .calculator-container {
   justify-content: center;
 }
 @media screen and (max-width: 700px) {
-  html main .calculator-container, body main .calculator-container {
+  html main .calculator-container,
+  body main .calculator-container {
     flex-direction: column;
     width: 100%;
     height: auto;
+    border-radius: 0;
   }
 }
-html main .calculator-container .calculator-1, body main .calculator-container .calculator-1 {
+html main .calculator-container .calculator-1,
+body main .calculator-container .calculator-1 {
   width: 47%;
   height: 89%;
   background-color: rgb(255, 255, 255);
@@ -41,18 +49,22 @@ html main .calculator-container .calculator-1, body main .calculator-container .
   flex-direction: column;
 }
 @media screen and (max-width: 700px) {
-  html main .calculator-container .calculator-1, body main .calculator-container .calculator-1 {
+  html main .calculator-container .calculator-1,
+  body main .calculator-container .calculator-1 {
     width: 100%;
-    margin-top: 100px;
+    height: auto;
+    margin-top: 10px;
   }
 }
-html main .calculator-container .calculator-1 .bill, body main .calculator-container .calculator-1 .bill {
+html main .calculator-container .calculator-1 .bill,
+body main .calculator-container .calculator-1 .bill {
   width: 90%;
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
 }
-html main .calculator-container .calculator-1 .bill label, body main .calculator-container .calculator-1 .bill label {
+html main .calculator-container .calculator-1 .bill label,
+body main .calculator-container .calculator-1 .bill label {
   color: hsl(186, 14%, 43%);
   font-family: monospace;
   font-weight: 700;
@@ -60,36 +72,65 @@ html main .calculator-container .calculator-1 .bill label, body main .calculator
   margin-top: 10px;
   padding-bottom: 5px;
 }
-html main .calculator-container .calculator-1 .bill input, body main .calculator-container .calculator-1 .bill input {
+html main .calculator-container .calculator-1 .bill .input-wrapper,
+body main .calculator-container .calculator-1 .bill .input-wrapper {
+  position: relative;
+}
+html main .calculator-container .calculator-1 .bill .input-wrapper input,
+body main .calculator-container .calculator-1 .bill .input-wrapper input {
   width: 95%;
   height: 40px;
   background-color: rgb(234, 240, 239);
   border: none;
   border-radius: 5px;
+  font-family: monospace;
+  font-size: 22px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  text-align: right;
+  padding-right: 5px;
 }
-html main .calculator-container .calculator-1 .bill input:is(:active, :focus), body main .calculator-container .calculator-1 .bill input:is(:active, :focus) {
+html main .calculator-container .calculator-1 .bill .input-wrapper input:is(:active, :focus),
+body main .calculator-container .calculator-1 .bill .input-wrapper input:is(:active, :focus) {
   outline: none;
   border: 2px solid hsl(183, 97%, 27%);
 }
-html main .calculator-container .calculator-1 .select-tip, body main .calculator-container .calculator-1 .select-tip {
+html main .calculator-container .calculator-1 .bill .input-wrapper input::-moz-placeholder, body main .calculator-container .calculator-1 .bill .input-wrapper input::-moz-placeholder {
+  color: rgb(181, 184, 181);
+}
+html main .calculator-container .calculator-1 .bill .input-wrapper input::placeholder,
+body main .calculator-container .calculator-1 .bill .input-wrapper input::placeholder {
+  color: rgb(181, 184, 181);
+}
+html main .calculator-container .calculator-1 .bill .input-wrapper img,
+body main .calculator-container .calculator-1 .bill .input-wrapper img {
+  position: absolute;
+  left: 3%;
+  top: 28%;
+}
+html main .calculator-container .calculator-1 .select-tip,
+body main .calculator-container .calculator-1 .select-tip {
   background-color: rgb(255, 255, 255);
   width: 90%;
   padding-bottom: 50px;
 }
-html main .calculator-container .calculator-1 .select-tip label, body main .calculator-container .calculator-1 .select-tip label {
+html main .calculator-container .calculator-1 .select-tip label,
+body main .calculator-container .calculator-1 .select-tip label {
   color: hsl(186, 14%, 43%);
   font-family: monospace;
   font-weight: 700;
   font-size: 18px;
 }
-html main .calculator-container .calculator-1 .select-tip .tips, body main .calculator-container .calculator-1 .select-tip .tips {
+html main .calculator-container .calculator-1 .select-tip .tips,
+body main .calculator-container .calculator-1 .select-tip .tips {
   display: flex;
   width: 100%;
   padding-top: 10px;
   flex-wrap: wrap;
   gap: 10px;
 }
-html main .calculator-container .calculator-1 .select-tip .tips button, body main .calculator-container .calculator-1 .select-tip .tips button {
+html main .calculator-container .calculator-1 .select-tip .tips button,
+body main .calculator-container .calculator-1 .select-tip .tips button {
   width: 30%;
   height: 45px;
   border-radius: 5px;
@@ -101,12 +142,14 @@ html main .calculator-container .calculator-1 .select-tip .tips button, body mai
   font-weight: 700;
   transition: 0.2s;
 }
-html main .calculator-container .calculator-1 .select-tip .tips button:hover, body main .calculator-container .calculator-1 .select-tip .tips button:hover {
+html main .calculator-container .calculator-1 .select-tip .tips button:hover,
+body main .calculator-container .calculator-1 .select-tip .tips button:hover {
   cursor: pointer;
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
-html main .calculator-container .calculator-1 .select-tip .tips input, body main .calculator-container .calculator-1 .select-tip .tips input {
+html main .calculator-container .calculator-1 .select-tip .tips input,
+body main .calculator-container .calculator-1 .select-tip .tips input {
   width: 28%;
   font-size: 22px;
   font-family: monospace;
@@ -115,129 +158,173 @@ html main .calculator-container .calculator-1 .select-tip .tips input, body main
   border: none;
   color: hsl(183, 100%, 15%);
   background-color: rgb(234, 240, 239);
+  text-align: center;
 }
 html main .calculator-container .calculator-1 .select-tip .tips input::-moz-placeholder, body main .calculator-container .calculator-1 .select-tip .tips input::-moz-placeholder {
   color: hsl(183, 97%, 27%);
-  padding-left: 10%;
 }
-html main .calculator-container .calculator-1 .select-tip .tips input::placeholder, body main .calculator-container .calculator-1 .select-tip .tips input::placeholder {
+html main .calculator-container .calculator-1 .select-tip .tips input::placeholder,
+body main .calculator-container .calculator-1 .select-tip .tips input::placeholder {
   color: hsl(183, 97%, 27%);
-  padding-left: 10%;
 }
-html main .calculator-container .calculator-1 .select-tip .tips input:is(:active, :focus), body main .calculator-container .calculator-1 .select-tip .tips input:is(:active, :focus) {
+html main .calculator-container .calculator-1 .select-tip .tips input:is(:active, :focus),
+body main .calculator-container .calculator-1 .select-tip .tips input:is(:active, :focus) {
   outline: none;
   border: 2px solid hsl(184, 96%, 17%);
 }
-html main .calculator-container .calculator-1 .people, body main .calculator-container .calculator-1 .people {
+html main .calculator-container .calculator-1 .people,
+body main .calculator-container .calculator-1 .people {
   width: 90%;
   display: flex;
   flex-direction: column;
 }
-html main .calculator-container .calculator-1 .people label, body main .calculator-container .calculator-1 .people label {
+html main .calculator-container .calculator-1 .people label,
+body main .calculator-container .calculator-1 .people label {
   color: hsl(186, 14%, 43%);
   font-family: monospace;
   font-weight: 700;
   font-size: 18px;
   padding-bottom: 5px;
 }
-html main .calculator-container .calculator-1 .people input, body main .calculator-container .calculator-1 .people input {
+html main .calculator-container .calculator-1 .people .input-wrapper2,
+body main .calculator-container .calculator-1 .people .input-wrapper2 {
+  position: relative;
+}
+html main .calculator-container .calculator-1 .people .input-wrapper2 input,
+body main .calculator-container .calculator-1 .people .input-wrapper2 input {
   width: 95%;
   height: 40px;
   background-color: rgb(234, 240, 239);
   border: none;
   border-radius: 5px;
+  font-family: monospace;
+  font-size: 22px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  text-align: right;
+  padding-right: 5px;
 }
-html main .calculator-container .calculator-1 .people input:is(:active, :focus), body main .calculator-container .calculator-1 .people input:is(:active, :focus) {
+html main .calculator-container .calculator-1 .people .input-wrapper2 input:is(:active, :focus),
+body main .calculator-container .calculator-1 .people .input-wrapper2 input:is(:active, :focus) {
   outline: none;
   border: 2px solid hsl(183, 100%, 15%);
 }
-html main .calculator-container .calculator-2, body main .calculator-container .calculator-2 {
+html main .calculator-container .calculator-1 .people .input-wrapper2 input::-moz-placeholder, body main .calculator-container .calculator-1 .people .input-wrapper2 input::-moz-placeholder {
+  color: rgb(181, 184, 181);
+}
+html main .calculator-container .calculator-1 .people .input-wrapper2 input::placeholder,
+body main .calculator-container .calculator-1 .people .input-wrapper2 input::placeholder {
+  color: rgb(181, 184, 181);
+}
+html main .calculator-container .calculator-1 .people img,
+body main .calculator-container .calculator-1 .people img {
+  position: absolute;
+  left: 3%;
+  top: 28%;
+}
+html main .calculator-container .calculator-2,
+body main .calculator-container .calculator-2 {
   width: 47%;
   height: 89%;
   border-radius: 20px;
   background-color: hsl(183, 100%, 15%);
 }
 @media screen and (max-width: 700px) {
-  html main .calculator-container .calculator-2, body main .calculator-container .calculator-2 {
+  html main .calculator-container .calculator-2,
+  body main .calculator-container .calculator-2 {
     width: 90%;
-    margin-top: 20px;
+    margin-top: 30px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 }
-html main .calculator-container .calculator-2 .tip-amount, body main .calculator-container .calculator-2 .tip-amount {
+html main .calculator-container .calculator-2 .tip-amount,
+body main .calculator-container .calculator-2 .tip-amount {
   width: 100%;
   height: 50%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-html main .calculator-container .calculator-2 .tip-amount .amount, body main .calculator-container .calculator-2 .tip-amount .amount {
+html main .calculator-container .calculator-2 .tip-amount .amount,
+body main .calculator-container .calculator-2 .tip-amount .amount {
   width: 100%;
   height: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-html main .calculator-container .calculator-2 .tip-amount .amount .amount-1, body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 {
+html main .calculator-container .calculator-2 .tip-amount .amount .amount-1,
+body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 {
   width: auto;
 }
-html main .calculator-container .calculator-2 .tip-amount .amount .amount-1 h3, body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 h3 {
+html main .calculator-container .calculator-2 .tip-amount .amount .amount-1 h3,
+body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 h3 {
   font-family: monospace;
   font-weight: 700;
   color: white;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-html main .calculator-container .calculator-2 .tip-amount .amount .amount-1 p, body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 p {
+html main .calculator-container .calculator-2 .tip-amount .amount .amount-1 p,
+body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 p {
   padding-top: 0;
   margin-top: 0;
   font-family: monospace;
   font-weight: 700;
   color: hsl(0, 0%, 66%);
 }
-html main .calculator-container .calculator-2 .tip-amount .amount .amount-2, body main .calculator-container .calculator-2 .tip-amount .amount .amount-2 {
+html main .calculator-container .calculator-2 .tip-amount .amount .amount-2,
+body main .calculator-container .calculator-2 .tip-amount .amount .amount-2 {
   width: auto;
 }
-html main .calculator-container .calculator-2 .tip-amount .amount .amount-2 p, body main .calculator-container .calculator-2 .tip-amount .amount .amount-2 p {
+html main .calculator-container .calculator-2 .tip-amount .amount .amount-2 p,
+body main .calculator-container .calculator-2 .tip-amount .amount .amount-2 p {
   font-size: 40px;
   font-family: monospace;
   font-weight: 700;
   color: rgb(55, 194, 171);
 }
-html main .calculator-container .calculator-2 .tip-amount .total, body main .calculator-container .calculator-2 .tip-amount .total {
+html main .calculator-container .calculator-2 .tip-amount .total,
+body main .calculator-container .calculator-2 .tip-amount .total {
   width: 100%;
   height: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-html main .calculator-container .calculator-2 .tip-amount .total .amount-1, body main .calculator-container .calculator-2 .tip-amount .total .amount-1 {
+html main .calculator-container .calculator-2 .tip-amount .total .amount-1,
+body main .calculator-container .calculator-2 .tip-amount .total .amount-1 {
   width: auto;
 }
-html main .calculator-container .calculator-2 .tip-amount .total .amount-1 h3, body main .calculator-container .calculator-2 .tip-amount .total .amount-1 h3 {
+html main .calculator-container .calculator-2 .tip-amount .total .amount-1 h3,
+body main .calculator-container .calculator-2 .tip-amount .total .amount-1 h3 {
   font-family: monospace;
   font-weight: 700;
   color: white;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-html main .calculator-container .calculator-2 .tip-amount .total .amount-1 p, body main .calculator-container .calculator-2 .tip-amount .total .amount-1 p {
+html main .calculator-container .calculator-2 .tip-amount .total .amount-1 p,
+body main .calculator-container .calculator-2 .tip-amount .total .amount-1 p {
   padding-top: 0;
   margin-top: 0;
   font-family: monospace;
   font-weight: 700;
   color: hsl(0, 0%, 66%);
 }
-html main .calculator-container .calculator-2 .tip-amount .total .amount-2, body main .calculator-container .calculator-2 .tip-amount .total .amount-2 {
+html main .calculator-container .calculator-2 .tip-amount .total .amount-2,
+body main .calculator-container .calculator-2 .tip-amount .total .amount-2 {
   width: auto;
 }
-html main .calculator-container .calculator-2 .tip-amount .total .amount-2 p, body main .calculator-container .calculator-2 .tip-amount .total .amount-2 p {
+html main .calculator-container .calculator-2 .tip-amount .total .amount-2 p,
+body main .calculator-container .calculator-2 .tip-amount .total .amount-2 p {
   font-size: 40px;
   font-family: monospace;
   font-weight: 700;
   color: rgb(55, 194, 171);
 }
-html main .calculator-container .calculator-2 .reset, body main .calculator-container .calculator-2 .reset {
+html main .calculator-container .calculator-2 .reset,
+body main .calculator-container .calculator-2 .reset {
   width: 100%;
   height: 50%;
   border-bottom-left-radius: 20px;
@@ -246,7 +333,8 @@ html main .calculator-container .calculator-2 .reset, body main .calculator-cont
   align-items: flex-end;
   justify-content: center;
 }
-html main .calculator-container .calculator-2 .reset button, body main .calculator-container .calculator-2 .reset button {
+html main .calculator-container .calculator-2 .reset button,
+body main .calculator-container .calculator-2 .reset button {
   width: 80%;
   height: 45px;
   border: none;
@@ -259,7 +347,8 @@ html main .calculator-container .calculator-2 .reset button, body main .calculat
   font-weight: 700;
   transition: 0.2s;
 }
-html main .calculator-container .calculator-2 .reset button:hover, body main .calculator-container .calculator-2 .reset button:hover {
+html main .calculator-container .calculator-2 .reset button:hover,
+body main .calculator-container .calculator-2 .reset button:hover {
   cursor: pointer;
   background-color: hsl(185, 41%, 84%);
 }/*# sourceMappingURL=styles.css.map */
