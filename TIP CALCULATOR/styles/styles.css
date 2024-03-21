@@ -7,7 +7,7 @@ html main,
 body main {
   width: 100%;
   height: 100vh;
-  background-color: rgb(202, 242, 243);
+  background-color: #caf2f3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@ body main {
 @media screen and (max-width: 700px) {
   html main,
   body main {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: auto;
   }
 }
@@ -24,7 +24,7 @@ body main .calculator-container {
   width: 800px;
   height: 430px;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ html main .calculator-container .calculator-1,
 body main .calculator-container .calculator-1 {
   width: 47%;
   height: 89%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -65,7 +65,7 @@ body main .calculator-container .calculator-1 .bill {
 }
 html main .calculator-container .calculator-1 .bill label,
 body main .calculator-container .calculator-1 .bill label {
-  color: hsl(186, 14%, 43%);
+  color: #5e7a7d;
   font-family: monospace;
   font-weight: 700;
   font-size: 18px;
@@ -80,12 +80,12 @@ html main .calculator-container .calculator-1 .bill .input-wrapper input,
 body main .calculator-container .calculator-1 .bill .input-wrapper input {
   width: 95%;
   height: 40px;
-  background-color: rgb(234, 240, 239);
-  border: none;
+  background-color: #eaf0ef;
+  border: 2px solid white;
   border-radius: 5px;
   font-family: monospace;
   font-size: 22px;
-  color: hsl(183, 100%, 15%);
+  color: #00494d;
   font-weight: 700;
   text-align: right;
   padding-right: 5px;
@@ -93,14 +93,14 @@ body main .calculator-container .calculator-1 .bill .input-wrapper input {
 html main .calculator-container .calculator-1 .bill .input-wrapper input:is(:active, :focus),
 body main .calculator-container .calculator-1 .bill .input-wrapper input:is(:active, :focus) {
   outline: none;
-  border: 2px solid hsl(183, 97%, 27%);
+  border: 2px solid #00494d;
 }
 html main .calculator-container .calculator-1 .bill .input-wrapper input::-moz-placeholder, body main .calculator-container .calculator-1 .bill .input-wrapper input::-moz-placeholder {
-  color: rgb(181, 184, 181);
+  color: #b5b8b5;
 }
 html main .calculator-container .calculator-1 .bill .input-wrapper input::placeholder,
 body main .calculator-container .calculator-1 .bill .input-wrapper input::placeholder {
-  color: rgb(181, 184, 181);
+  color: #b5b8b5;
 }
 html main .calculator-container .calculator-1 .bill .input-wrapper img,
 body main .calculator-container .calculator-1 .bill .input-wrapper img {
@@ -110,13 +110,13 @@ body main .calculator-container .calculator-1 .bill .input-wrapper img {
 }
 html main .calculator-container .calculator-1 .select-tip,
 body main .calculator-container .calculator-1 .select-tip {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   width: 90%;
   padding-bottom: 50px;
 }
 html main .calculator-container .calculator-1 .select-tip label,
 body main .calculator-container .calculator-1 .select-tip label {
-  color: hsl(186, 14%, 43%);
+  color: #5e7a7d;
   font-family: monospace;
   font-weight: 700;
   font-size: 18px;
@@ -135,7 +135,7 @@ body main .calculator-container .calculator-1 .select-tip .tips button {
   height: 45px;
   border-radius: 5px;
   border: none;
-  background-color: hsl(183, 100%, 15%);
+  background-color: #00494d;
   color: white;
   font-family: monospace;
   font-size: 22px;
@@ -145,8 +145,8 @@ body main .calculator-container .calculator-1 .select-tip .tips button {
 html main .calculator-container .calculator-1 .select-tip .tips button:hover,
 body main .calculator-container .calculator-1 .select-tip .tips button:hover {
   cursor: pointer;
-  background-color: hsl(185, 41%, 84%);
-  color: hsl(183, 100%, 15%);
+  background-color: #caf2f3;
+  color: #00494d;
 }
 html main .calculator-container .calculator-1 .select-tip .tips input,
 body main .calculator-container .calculator-1 .select-tip .tips input {
@@ -156,21 +156,21 @@ body main .calculator-container .calculator-1 .select-tip .tips input {
   font-weight: 700;
   border-radius: 5px;
   border: none;
-  color: hsl(183, 100%, 15%);
-  background-color: rgb(234, 240, 239);
+  color: #00494d;
+  background-color: #eaf0ef;
   text-align: center;
 }
 html main .calculator-container .calculator-1 .select-tip .tips input::-moz-placeholder, body main .calculator-container .calculator-1 .select-tip .tips input::-moz-placeholder {
-  color: hsl(183, 97%, 27%);
+  color: #00494d;
 }
 html main .calculator-container .calculator-1 .select-tip .tips input::placeholder,
 body main .calculator-container .calculator-1 .select-tip .tips input::placeholder {
-  color: hsl(183, 97%, 27%);
+  color: #00494d;
 }
 html main .calculator-container .calculator-1 .select-tip .tips input:is(:active, :focus),
 body main .calculator-container .calculator-1 .select-tip .tips input:is(:active, :focus) {
   outline: none;
-  border: 2px solid hsl(184, 96%, 17%);
+  border: 2px solid #00494d;
 }
 html main .calculator-container .calculator-1 .people,
 body main .calculator-container .calculator-1 .people {
@@ -180,7 +180,7 @@ body main .calculator-container .calculator-1 .people {
 }
 html main .calculator-container .calculator-1 .people label,
 body main .calculator-container .calculator-1 .people label {
-  color: hsl(186, 14%, 43%);
+  color: #5e7a7d;
   font-family: monospace;
   font-weight: 700;
   font-size: 18px;
@@ -194,12 +194,12 @@ html main .calculator-container .calculator-1 .people .input-wrapper2 input,
 body main .calculator-container .calculator-1 .people .input-wrapper2 input {
   width: 95%;
   height: 40px;
-  background-color: rgb(234, 240, 239);
-  border: none;
+  background-color: #eaf0ef;
+  border: 2px solid white;
   border-radius: 5px;
   font-family: monospace;
   font-size: 22px;
-  color: hsl(183, 100%, 15%);
+  color: #00494d;
   font-weight: 700;
   text-align: right;
   padding-right: 5px;
@@ -207,14 +207,14 @@ body main .calculator-container .calculator-1 .people .input-wrapper2 input {
 html main .calculator-container .calculator-1 .people .input-wrapper2 input:is(:active, :focus),
 body main .calculator-container .calculator-1 .people .input-wrapper2 input:is(:active, :focus) {
   outline: none;
-  border: 2px solid hsl(183, 100%, 15%);
+  border: 2px solid #00494d;
 }
 html main .calculator-container .calculator-1 .people .input-wrapper2 input::-moz-placeholder, body main .calculator-container .calculator-1 .people .input-wrapper2 input::-moz-placeholder {
-  color: rgb(181, 184, 181);
+  color: #b5b8b5;
 }
 html main .calculator-container .calculator-1 .people .input-wrapper2 input::placeholder,
 body main .calculator-container .calculator-1 .people .input-wrapper2 input::placeholder {
-  color: rgb(181, 184, 181);
+  color: #b5b8b5;
 }
 html main .calculator-container .calculator-1 .people img,
 body main .calculator-container .calculator-1 .people img {
@@ -227,7 +227,7 @@ body main .calculator-container .calculator-2 {
   width: 47%;
   height: 89%;
   border-radius: 20px;
-  background-color: hsl(183, 100%, 15%);
+  background-color: #00494d;
 }
 @media screen and (max-width: 700px) {
   html main .calculator-container .calculator-2,
@@ -271,7 +271,7 @@ body main .calculator-container .calculator-2 .tip-amount .amount .amount-1 p {
   margin-top: 0;
   font-family: monospace;
   font-weight: 700;
-  color: hsl(0, 0%, 66%);
+  color: #a8a8a8;
 }
 html main .calculator-container .calculator-2 .tip-amount .amount .amount-2,
 body main .calculator-container .calculator-2 .tip-amount .amount .amount-2 {
@@ -282,7 +282,7 @@ body main .calculator-container .calculator-2 .tip-amount .amount .amount-2 p {
   font-size: 40px;
   font-family: monospace;
   font-weight: 700;
-  color: rgb(55, 194, 171);
+  color: #37c2ab;
 }
 html main .calculator-container .calculator-2 .tip-amount .total,
 body main .calculator-container .calculator-2 .tip-amount .total {
@@ -310,7 +310,7 @@ body main .calculator-container .calculator-2 .tip-amount .total .amount-1 p {
   margin-top: 0;
   font-family: monospace;
   font-weight: 700;
-  color: hsl(0, 0%, 66%);
+  color: #b5b8b5;
 }
 html main .calculator-container .calculator-2 .tip-amount .total .amount-2,
 body main .calculator-container .calculator-2 .tip-amount .total .amount-2 {
@@ -321,7 +321,7 @@ body main .calculator-container .calculator-2 .tip-amount .total .amount-2 p {
   font-size: 40px;
   font-family: monospace;
   font-weight: 700;
-  color: rgb(55, 194, 171);
+  color: #37c2ab;
 }
 html main .calculator-container .calculator-2 .reset,
 body main .calculator-container .calculator-2 .reset {
@@ -339,8 +339,8 @@ body main .calculator-container .calculator-2 .reset button {
   height: 45px;
   border: none;
   border-radius: 5px;
-  background-color: hsl(183, 89%, 22%);
-  color: hsl(184, 96%, 17%);
+  background-color: #06656a;
+  color: #00494d;
   margin-bottom: 25px;
   font-family: monospace;
   font-size: 22px;
@@ -350,5 +350,5 @@ body main .calculator-container .calculator-2 .reset button {
 html main .calculator-container .calculator-2 .reset button:hover,
 body main .calculator-container .calculator-2 .reset button:hover {
   cursor: pointer;
-  background-color: hsl(185, 41%, 84%);
+  background-color: #caf2f3;
 }/*# sourceMappingURL=styles.css.map */

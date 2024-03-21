@@ -1,6 +1,15 @@
 // IMPORTS
 @import "../mediaQ/mediaq.scss";
 
+$color-background: #caf2f3 ;
+$color-greendark: #00494d ;
+$color-lightgreen: #06656a ;
+$color-lightgreen-2: #37c2ab;
+$color-lightwhite: #eaf0ef;
+$color-labels: #5e7a7d;
+$color-gray: #b5b8b5;
+$color-white: #ffff ;
+
 html,
 body {
     margin: 0;
@@ -9,13 +18,13 @@ body {
     main {
         width: 100%;
         height: 100vh;
-        background-color: rgb(202, 242, 243);
+        background-color: $color-background;
         display: flex;
         align-items: center;
         justify-content: center;
 
         @include mobile {
-            background-color: rgb(255, 255, 255);
+            background-color: $color-white ;
             height: auto;
         }
 
@@ -23,7 +32,7 @@ body {
             width: 800px;
             height: 430px;
             border-radius: 20px;
-            background-color: rgb(255, 255, 255);
+            background-color: $color-white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -38,7 +47,7 @@ body {
             .calculator-1 {
                 width: 47%;
                 height: 89%;
-                background-color: rgb(255, 255, 255);
+                background-color: $color-white ;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -58,7 +67,7 @@ body {
                     padding-bottom: 50px;
 
                     label {
-                        color: hsl(186, 14%, 43%);
+                        color: $color-labels;
                         font-family: monospace;
                         font-weight: 700;
                         font-size: 18px;
@@ -73,23 +82,23 @@ body {
                         input {
                             width: 95%;
                             height: 40px;
-                            background-color: rgb(234, 240, 239);
-                            border: none;
+                            background-color: $color-lightwhite;
+                            border: 2px solid $color-white;
                             border-radius: 5px;
                             font-family: monospace;
                             font-size: 22px;
-                            color: hsl(183, 100%, 15%);
+                            color: $color-greendark;
                             font-weight: 700;
                             text-align: right;
                             padding-right: 5px;
 
                             &:is(:active, :focus) {
                                 outline: none;
-                                border: 2px solid hsl(183, 97%, 27%);
+                                border: 2px solid $color-greendark;
                             }
 
                             &::placeholder {
-                                color: rgb(181, 184, 181);
+                                color: $color-gray;
                             }
                         }
 
@@ -102,12 +111,12 @@ body {
                 }
 
                 .select-tip {
-                    background-color: rgb(255, 255, 255);
+                    background-color: $color-white;
                     width: 90%;
                     padding-bottom: 50px;
 
                     label {
-                        color: hsl(186, 14%, 43%);
+                        color: $color-labels;
                         font-family: monospace;
                         font-weight: 700;
                         font-size: 18px;
@@ -125,8 +134,8 @@ body {
                             height: 45px;
                             border-radius: 5px;
                             border: none;
-                            background-color: hsl(183, 100%, 15%);
-                            color: white;
+                            background-color: $color-greendark;
+                            color: $color-white;
                             font-family: monospace;
                             font-size: 22px;
                             font-weight: 700;
@@ -134,8 +143,8 @@ body {
 
                             &:hover {
                                 cursor: pointer;
-                                background-color: hsl(185, 41%, 84%);
-                                color: hsl(183, 100%, 15%);
+                                background-color: $color-background ;
+                                color: $color-greendark ;
                             }
                         }
 
@@ -146,17 +155,17 @@ body {
                             font-weight: 700;
                             border-radius: 5px;
                             border: none;
-                            color: hsl(183, 100%, 15%);
-                            background-color: rgb(234, 240, 239);
+                            color: $color-greendark;
+                            background-color: $color-lightwhite;
                             text-align: center;
 
                             &::placeholder {
-                                color: hsl(183, 97%, 27%);
+                                color: $color-greendark;
                             }
 
                             &:is(:active, :focus) {
                                 outline: none;
-                                border: 2px solid hsl(184, 96%, 17%);
+                                border: 2px solid $color-greendark;
                             }
                         }
                     }
@@ -168,7 +177,7 @@ body {
                     flex-direction: column;
 
                     label {
-                        color: hsl(186, 14%, 43%);
+                        color: $color-labels;
                         font-family: monospace;
                         font-weight: 700;
                         font-size: 18px;
@@ -181,23 +190,23 @@ body {
                         input {
                             width: 95%;
                             height: 40px;
-                            background-color: rgb(234, 240, 239);
-                            border: none;
+                            background-color: $color-lightwhite;
+                            border: 2px solid $color-white;
                             border-radius: 5px;
                             font-family: monospace;
                             font-size: 22px;
-                            color: hsl(183, 100%, 15%);
+                            color: $color-greendark ;
                             font-weight: 700;
                             text-align: right;
                             padding-right: 5px;
 
                             &:is(:active, :focus) {
                                 outline: none;
-                                border: 2px solid hsl(183, 100%, 15%);
+                                border: 2px solid $color-greendark;
                             }
 
                             &::placeholder {
-                                color: rgb(181, 184, 181);
+                                color: $color-gray;
                             }
                         }
                     }
@@ -215,7 +224,7 @@ body {
                 width: 47%;
                 height: 89%;
                 border-radius: 20px;
-                background-color: hsl(183, 100%, 15%);
+                background-color: $color-greendark;
 
                 @include mobile {
                     width: 90%;
@@ -243,7 +252,7 @@ body {
                             h3 {
                                 font-family: monospace;
                                 font-weight: 700;
-                                color: white;
+                                color: $color-white;
                                 padding-bottom: 0;
                                 margin-bottom: 0;
                             }
@@ -253,7 +262,7 @@ body {
                                 margin-top: 0;
                                 font-family: monospace;
                                 font-weight: 700;
-                                color: hsl(0, 0%, 66%);
+                                color: #a8a8a8;
                             }
                         }
 
@@ -264,7 +273,7 @@ body {
                                 font-size: 40px;
                                 font-family: monospace;
                                 font-weight: 700;
-                                color: rgb(55, 194, 171);
+                                color: $color-lightgreen-2;
                             }
                         }
                     }
@@ -282,7 +291,7 @@ body {
                             h3 {
                                 font-family: monospace;
                                 font-weight: 700;
-                                color: white;
+                                color: $color-white;
                                 padding-bottom: 0;
                                 margin-bottom: 0;
                             }
@@ -292,7 +301,7 @@ body {
                                 margin-top: 0;
                                 font-family: monospace;
                                 font-weight: 700;
-                                color: hsl(0, 0%, 66%);
+                                color: $color-gray;
                             }
                         }
 
@@ -303,7 +312,7 @@ body {
                                 font-size: 40px;
                                 font-family: monospace;
                                 font-weight: 700;
-                                color: rgb(55, 194, 171);
+                                color: $color-lightgreen-2;
                             }
                         }
                     }
@@ -323,8 +332,8 @@ body {
                         height: 45px;
                         border: none;
                         border-radius: 5px;
-                        background-color: hsl(183, 89%, 22%);
-                        color: hsl(184, 96%, 17%);
+                        background-color: $color-lightgreen;
+                        color: $color-greendark;
                         margin-bottom: 25px;
                         font-family: monospace;
                         font-size: 22px;
@@ -333,7 +342,7 @@ body {
 
                         &:hover {
                             cursor: pointer;
-                            background-color: hsl(185, 41%, 84%);
+                            background-color: $color-background;
                         }
                     }
                 }
