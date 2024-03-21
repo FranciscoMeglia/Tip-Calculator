@@ -10,6 +10,12 @@ $color-labels: #5e7a7d;
 $color-gray: #b5b8b5;
 $color-white: #ffff ;
 
+@mixin centrar() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 html,
 body {
     margin: 0;
@@ -19,9 +25,7 @@ body {
         width: 100%;
         height: 100vh;
         background-color: $color-background;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centrar();
 
         @include mobile {
             background-color: $color-white ;
@@ -33,9 +37,7 @@ body {
             height: 430px;
             border-radius: 20px;
             background-color: $color-white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include centrar();
 
             @include mobile {
                 flex-direction: column;
